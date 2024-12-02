@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="canva" height="200" width="300" style="border: 1px solid black;"></canvas>
+
+    <script>
+        let canva = document.getElementById("canva");
+        let c = canva.getContext("2d");
+        c.lineWidth = 5;
+        c.strokeStyle = "green";
+        
+        c.moveTo(50,50);
+        c.lineTo(200,50);
+        c.lineTo(50, 150);
+        c.lineTo(50,50)
+        c.stroke();
+
+    </script>
+</body>
+</html>
